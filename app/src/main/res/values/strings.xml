@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Android Project I</string>
+    <string name="txt_btn_enviar_estatico"> Enviar - estático</string>
+    <string name="txt_btn_enviar_dinamico"> Enviar - Dinâmico</string>
+    <string name="txt_btn_service">Service</string>
+</resources>
