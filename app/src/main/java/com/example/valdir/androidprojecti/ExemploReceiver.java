@@ -23,6 +23,7 @@ public class ExemploReceiver extends BroadcastReceiver {
         }else if (acao.equals("android.intent.action.BOOT_COMPLETED")) {
             Intent i = new Intent(context, MainActivity.class);
             i.addCategory(Intent.CATEGORY_DEFAULT);
+            //MENSAGEM GITHUB
             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(i);
         }
