@@ -25,12 +25,21 @@
         </receiver>
 
         <service android:name=".ExemploService">
+        <intent-filter>
+            <action android:name="ExemploService" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </service>
+
+        <service android:name=".ExemploBindService">
             <intent-filter>
-                <action android:name="ExemploService" />
+                <action android:name="ExemploBindService" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
+
 
         <activity android:name=".ServiceActivity">
             <intent-filter>

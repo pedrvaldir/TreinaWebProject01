@@ -6,13 +6,25 @@
     android:layout_height="match_parent"
     tools:context="com.example.valdir.androidprojecti.ServiceActivity">
 
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        android:orientation="vertical"
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp"
-        android:weightSum="1">
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <Button
+            android:id="@+id/btnIniciarBindService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/txt_btn_bind_service"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="16dp" />
+
         <Button
             android:id="@+id/btnIniciarService"
             android:layout_width="wrap_content"
@@ -23,15 +35,19 @@
 
         <TextView
             android:id="@+id/textViewStatus"
-            android:layout_width="87dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="0.05"
             android:text="status"
             android:textSize="19dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="98dp"
-            android:layout_weight="0.05" />
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="152dp"
+            android:layout_below="@+id/btnIniciarService"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp" />
+    </RelativeLayout>
 
-    </LinearLayout>
+
 
 
 </android.support.constraint.ConstraintLayout>
